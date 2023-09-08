@@ -115,8 +115,6 @@ script:
         dst: $GAMEDIR/drive_c/Program Files (x86)/Jagex Launcher/Games/RuneLite
     - chmodx: $GAMEDIR/drive_c/Program Files (x86)/Jagex Launcher/Games/RuneLite/runelite.sh
     - execute:
-        command: flatpak install flathub dev.hdos.HDOS -y
-    - execute:
         command: ln -s "$GAMEDIR/drive_c/Program Files (x86)/Jagex Launcher/Games/RuneLite/runelite.sh" "$GAMEDIR/drive_c/Program Files (x86)/Jagex Launcher/Games/RuneLite/RuneLite.exe"
     - merge:
         src: hdos-launcher
